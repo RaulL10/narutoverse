@@ -6,6 +6,7 @@ const shinobisCtrl = require('../controllers/shinobis')
 
 /* GET users listing. */
 router.get('/', shinobisCtrl.index)
+router.get('/new', shinobisCtrl.new)
 
 
 

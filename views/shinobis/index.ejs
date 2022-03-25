@@ -10,8 +10,7 @@
     <h1>HELLO</h1>
     <ul>
         <% shinobis.forEach(function(s) { %>
-        <li><%= s.name %></li>
-        <li><%= s.village %></li>
+        <li> <a href="shinobis/<%=s._id%>"> <%= s.name %> </a></li>
         <% }) %>
     </ul>
     <a href="/shinobis/new">Add Ninja</a>

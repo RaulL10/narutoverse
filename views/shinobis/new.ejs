@@ -8,6 +8,20 @@
 </head>
 <body>
     <h1>Add Ninja</h1>
-    <form
+    <form action="/shinobis" method="POST">
+        <input type="text" name="name">
+        <select name="village">
+            <option value="Hidden Leaf">Hidden Leaf</option>
+            <option value="Hidden Stone">Hidden Stone</option>
+            <option value="Hidden Mist">Hidden Mist</option>
+            <option Value="Hidden Sand">Hidden Sand</option>
+            <option value="Hidden CLoud">Hidden CLoud</option>
+            <option value="Hidden Rain">Hidden Rain</option>
+            <option value="Hidden Sound">Hidden Sound</option>
+        </select>
+        <input type="number" name="age">
+        <input type="text" name="jutsu">
+        <input type="submit" value="Add Ninja">
+    </form>
 </body>
 </html>

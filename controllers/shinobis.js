@@ -7,7 +7,8 @@ module.exports ={
 
 function index(req, res) {
     Shinobi.find({}, function(err, shinobis) {
-        res.render('shinobis', {shinobis})
+        console.log(shinobis)
+        res.render('shinobis/index', {shinobis})
     })
 }
 

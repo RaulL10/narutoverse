@@ -1,18 +1,36 @@
+#home {
+  background-image: url(https://i.imgur.com/wxPcGmg.png);
+  font-family: 'Nanum Brush Script', cursive;
+}
+#homeTitle {
+  font-size: 180px;
+  margin: 0;
+}
+#homeNav {
+  background-color: rgba(0,0,0,.5);
+  width: 50%;
+  display: inline-flex;
+  justify-content: space-around;
+}
+#homeNav > a:hover:not(.active) {
+  color: black;
+  background-color: orange;
+}
+
+#homeNav > a.active {
+  color: white;
+  cursor: default;
+}
+.login img {
+  height: 20px;
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
-}
-.login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 34px;
-}
-
-.login img {
-  height: 30px;
+  color: white;
+  font-size: 30px;
 }

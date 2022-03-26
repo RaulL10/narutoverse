@@ -3,18 +3,24 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <nav>
-      <a href="/shinobis" %>>Shinobis</a>
+  <body id="home">
+    <h1 id="homeTitle"><%= title %></h1>
+    <nav id ='homeNav'>
+      <a href="/shinobis" %>>SHINOBIS</a>
       <% if (user) { %>
-        <a href="/logout">LOG OUT</a>
+      <a href="/logout">LOG OUT</a>
       <% } else { %>
-        <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
-        <% } %>
-        <p>Welcome to <%= title %></p>
-        <a href="/shinobis">Senpai</a>
+      <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
+      <% } %>
     </nav>
+
+    <footer id="homeFooter">
+      Some Naruto Links for your enjoyment :)
+      <a href="https://discord.gg/sasuke">Naruto Discord</a>
+    </footer>
   </body>
 </html>

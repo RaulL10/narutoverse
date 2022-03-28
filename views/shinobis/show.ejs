@@ -27,4 +27,45 @@
         <li><%= shinobi.age %></li>
         <li><%= shinobi.jutsu %></li>
     </ul>
+    <br>
+    <br>
+    <h2>Chat</h2>
+    <% if (user) { %>
+        <form action="/shinobis/<%=shinobi._id %>/chats" method="POST">
+            <!-- <label>Chat:</label> -->
+            <textarea name="content"></textarea>
+            <label>Rating</label>
+            <select name="rating">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5" selected>5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br>
+            <input type="submit" value="Chat">
+        </form>
+    <% } %>
+    <br>
+        <% shinobi.chats.forEach(function(s) { %>
+            <section id="chat">
+                <% if (user && user._id.equals(s.user)) { %>
+            <h3> <img class="avatar" alt="avatar" src="<%= s.userAvatar %>" width="15px" height="15px"> <%= s.username %> </h3>
+            <h4> <%=s.content%> </h4>
+            <p> Rating: <%=s.rating%> </p>    
+            <form action="/chats/<%= s._id %>?_method=DELETE" method="POST">
+              <button type="submit">X</button>
+            </form>
+            <% } %>
+            </section>
+        <% }) %>
+
+
+
+
+
 </body>

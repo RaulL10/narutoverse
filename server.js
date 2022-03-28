@@ -14,6 +14,8 @@ require('./config/passport');
 
 var indexRouter = require('./routes/index');
 var shinobisRouter = require('./routes/shinobis');
+var chatsRouter = require('./routes/chats');
+
 
 var app = express();
 
@@ -41,6 +43,9 @@ app.use(function (req, res, next) {
 
 app.use('/', indexRouter);
 app.use('/shinobis', shinobisRouter);
+app.use('/', chatsRouter)
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

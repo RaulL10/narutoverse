@@ -1,29 +1,6 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const shinobiSchema = new Schema ({
-    name: {
-        type: String,
-        required: true,
-    },
-    village: {
-        type: String,
-        required: true 
-    },
-    age: {
-        type: Number,
-        min: 10,
-        max: 80,
-        required: true
-    },
-    jutsu: {
-        type: String,
-        required: true,
-    } 
-}, {
-    timestamps: true
-})
-
 
 const chatSchema = new Schema({
     rating: {
@@ -46,6 +23,34 @@ const chatSchema = new Schema({
 }, {
     timestamps: true
 })
+
+
+
+const shinobiSchema = new Schema ({
+    name: {
+        type: String,
+        required: true,
+    },
+    village: {
+        type: String,
+        required: true 
+    },
+    age: {
+        type: Number,
+        min: 10,
+        max: 80,
+        required: true
+    },
+    jutsu: {
+        type: String,
+        required: true,
+    },
+    chats: [chatSchema]
+}, {
+    timestamps: true
+})
+
+
 
 
 module.exports = mongoose.model('Shinobi', shinobiSchema)

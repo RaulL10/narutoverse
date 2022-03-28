@@ -1,36 +1,73 @@
-#home {
-  background-image: url(https://i.imgur.com/wxPcGmg.png);
-  font-family: 'Nanum Brush Script', cursive;
+body {
+  height: 90vh;
+  padding: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /* background-color: #232323; */
+  display: grid;
+  grid-template-areas: 
+  'nav nav nav'
+  'left mid right'
+  'ftr ftr ftr';
+  grid-template-rows: 30px 1fr 30px;
+  grid-template-columns: 450px 1fr 450px;
 }
-#homeTitle {
-  font-size: 180px;
-  margin: 0;
-}
-#homeNav {
+nav {
+  grid-area: nav;
   background-color: rgba(0,0,0,.5);
-  width: 50%;
+  width: 100%;
   display: inline-flex;
   justify-content: space-around;
+  height: 35px
 }
-#homeNav > a:hover:not(.active) {
+.login img {
+  height: 20px;
+} 
+nav > a:hover:not(.active) {
   color: black;
   background-color: orange;
 }
 
-#homeNav > a.active {
+nav > a.active {
   color: white;
   cursor: default;
 }
-.login img {
-  height: 20px;
-}
-
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
 a {
-  color: white;
   font-size: 30px;
+  font-family: 'Nanum Brush Script', cursive;
+}
+#right {
+  grid-area: right;
+  width: 450px;
+  height: 1080px;
+  margin-top: 3px;
+}
+#left {
+  grid-area: left;
+  width: 450px;
+  height: 1080px;
+  margin-top: 3px;
+
+}
+footer {
+  grid-area: ftr;
+}
+ul {
+  grid-area: mid;
+  grid-area: list;
+}
+h1 {
+  grid-area: mid;
+  grid-area: head;
+  font-size: 150px;
+  font-family: 'Nanum Brush Script', cursive;
+  margin: 0px;
+  justify-self: center;
+  height: 155px;
+}
+#mid {
+  display: grid;
+  grid-template-rows: 200px 1fr;
+  grid-template-areas: 
+  'head'
+  'list';
 }

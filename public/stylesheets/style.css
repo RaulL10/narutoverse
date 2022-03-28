@@ -90,6 +90,7 @@ td {
 }
 .ninjas {
   font-size: 45px;
+  margin: auto;
 }
 /* ul {
   grid-area: mid;

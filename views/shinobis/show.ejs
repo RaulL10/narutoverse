@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/show.css' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <h2><%= shinobi.name %></h2>
-    <div><%= shinobi.age %></div>
-    <div><%= shinobi.village %></div>
-    <div><%= shinobi.jutsu %></div>
+    <nav>
+        <a href="/">HOME</a>
+        <a href="/shinobis">SHINOBIS</a>
+        <a href="/shinobis/new">Add Ninja</a>
+        <% if (user) { %>
+        <a href="/logout">LOG OUT</a>
+        <% } else { %>
+        <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
+        <% } %>
+    </nav>
+    <h1><%= shinobi.name %></h1>
+    <ul>
+        <li><%= shinobi.village %></li>
+        <li><%= shinobi.age %></li>
+        <li><%= shinobi.jutsu %></li>
+    </ul>
 </body>
-</html>

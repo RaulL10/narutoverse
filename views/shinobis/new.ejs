@@ -23,7 +23,9 @@
     </nav>
     <h1>Add Ninja</h1>
     <form action="/shinobis" method="POST">
+        <label>Name:</label>
         <input type="text" name="name">
+        <label>Village</label>
         <select name="village">
             <option value="Hidden Leaf">Hidden Leaf</option>
             <option value="Hidden Stone">Hidden Stone</option>
@@ -33,7 +35,9 @@
             <option value="Hidden Rain">Hidden Rain</option>
             <option value="Hidden Sound">Hidden Sound</option>
         </select>
+        <label>Age:</label>
         <input type="number" name="age">
+        <label>Favorite Jutsu!</label>
         <input type="text" name="jutsu">
         <input id='add' type="submit" value="Add Ninja">
     </form>

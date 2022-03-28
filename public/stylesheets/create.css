@@ -42,14 +42,23 @@ input {
     font-size: 30px;
     margin: 10px 10px 10px 10px;
     font-family: 'Nanum Brush Script', cursive;
+    border: none;
+    background-color: rgba(1, 1, 1, .5);
+    color: white;
+    text-align: center;
 }
 select {
     font-size: 30px;
     font-family: 'Nanum Brush Script', cursive;
 }
 #add {
-    border: none;
+    border-style: solid;
+    border-color: darkred;
     background-color: rgba(0,0,0,.5);
     color: white;
     font-family: 'Nanum Brush Script', cursive;
+}
+label {
+    color: white;
+    margin-top: 5px;
 }

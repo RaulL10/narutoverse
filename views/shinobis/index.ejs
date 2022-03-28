@@ -24,11 +24,17 @@
     <!-- <%- include('../partials/header') %> -->
     <div id="mid">
     <h1>NINJA</h1>
-    <ul>
-        <% shinobis.forEach(function(s) { %>
-        <li> <a href="shinobis/<%=s._id%>"> <%= s.name %> </a></li>
-        <% }) %>
-    </ul>
+    <table>
+        <tr>
+            <% shinobis.forEach(function(s) { %>
+            <td>
+                <a href="shinobis/<%=s._id%>" class="ninjas"> <%= s.name %> </a>
+            </td>
+            <% }) %>
+        </tr>
+    </table>
+            
+  
     </div>
     <!-- <a href="/shinobis/new">Add Ninja</a> -->
     <section id="right"><img src="https://i.imgur.com/EDFXBoL.jpeg"/></section>

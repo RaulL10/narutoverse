@@ -2,7 +2,7 @@ body {
   height: 90vh;
   padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  /* background-color: #232323; */
+  background-color: rgb(240, 156, 46);
   display: grid;
   grid-template-areas: 
   'nav nav nav'
@@ -51,9 +51,12 @@ a {
 footer {
   grid-area: ftr;
 }
-ul {
-  grid-area: mid;
-  grid-area: list;
+#mid {
+  display: grid;
+  grid-template-rows: 200px 1fr;
+  grid-template-areas: 
+  'head'
+  'list';
 }
 h1 {
   grid-area: mid;
@@ -64,10 +67,37 @@ h1 {
   justify-self: center;
   height: 155px;
 }
-#mid {
-  display: grid;
-  grid-template-rows: 200px 1fr;
-  grid-template-areas: 
-  'head'
-  'list';
+table {
+  grid-area: list;
+  max-width: 380px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-self: center;
 }
+tr {
+  max-width: 380px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+td {
+  text-align: center;
+  max-width: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.ninjas {
+  font-size: 45px;
+}
+/* ul {
+  grid-area: mid;
+  grid-area: list;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+li {
+  font-size: 50px;
+} */

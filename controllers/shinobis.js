@@ -12,7 +12,6 @@ module.exports ={
 
 function index(req, res) {
     Shinobi.find({}, function(err, shinobis) {
-        console.log(shinobis)
         res.render('shinobis/index', {shinobis})
     })
 }
@@ -39,5 +38,13 @@ function edit(req, res) {
     res.render('shinobis/edit', {shinobi})
 }
 function update(req, res) {
+    Shinobi.findOneAndUpdate( {_id: req.params.id}, req.body, {new: true} , function(err, shinobi) {
+        console.log(req.body)
+        console.log(req.params.id)
+        if (err)
+        return res.redirect ('/shinobis/edit')
+        res.redirect(`/shinobis/${shinobi._id}`)
+    });
+}   
 
-}
+

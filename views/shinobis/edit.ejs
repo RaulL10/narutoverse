@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/edit.css' />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
@@ -21,5 +21,23 @@
         <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
         <% } %>
     </nav>
-
+    <form action="/shinobis/<%= shinobi.id %>?_method=PUT" method="POST">
+        <label>Name:</label>
+        <input type="text" name="name">
+        <label>Village</label>
+        <select name="village">
+            <option value="Hidden Leaf">Hidden Leaf</option>
+            <option value="Hidden Stone">Hidden Stone</option>
+            <option value="Hidden Mist">Hidden Mist</option>
+            <option Value="Hidden Sand">Hidden Sand</option>
+            <option value="Hidden CLoud">Hidden CLoud</option>
+            <option value="Hidden Rain">Hidden Rain</option>
+            <option value="Hidden Sound">Hidden Sound</option>
+        </select>
+        <label>Age:</label>
+        <input type="number" name="age">
+        <label>Favorite Jutsu!</label>
+        <input type="text" name="jutsu">
+        <input type="submit" value="Edit">
+    </form>
 </body>

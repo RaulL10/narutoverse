@@ -1,0 +1,35 @@
+body {
+    background-image: url(https://i.imgur.com/lg1GFWH.png);
+    background-size: cover;
+    font-family: 'Nanum Brush Script', cursive;
+    height: 90vh;
+}
+nav {
+    /* grid-area: nav; */
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    height: 35px
+}
+.login img {
+    height: 20px;
+} 
+nav > a:hover:not(.active) {
+    color: black;
+    background-color: orange;
+}
+nav > a.active {
+    color: white;
+    cursor: default;
+}
+a {
+    font-size: 30px;
+    font-family: 'Nanum Brush Script', cursive;
+    color: white;
+}
+h1 {
+    text-align: center;
+    font-size: 155px;
+    margin: 20px;
+}

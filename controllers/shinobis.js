@@ -6,6 +6,8 @@ module.exports ={
     new: newNinja,
     create,
     show,
+    edit,
+    update
 }
 
 function index(req, res) {
@@ -30,4 +32,12 @@ function show(req, res) {
     Shinobi.findById(req.params.id, function(err, shinobi) {
         res.render('shinobis/show', {title: `${shinobi.name}`, shinobi})
     })
+}
+function edit(req, res) {
+    const shinobi = {id: req.params.id}
+    console.log('HEY')
+    res.render('shinobis/edit', {shinobi})
+}
+function update(req, res) {
+
 }

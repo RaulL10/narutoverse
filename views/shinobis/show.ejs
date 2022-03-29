@@ -51,21 +51,17 @@
         </form>
     <% } %>
     <br>
-        <% shinobi.chats.forEach(function(s) { %>
-            <section id="chat">
-                <% if (user && user._id.equals(s.user)) { %>
-            <h3> <img class="avatar" alt="avatar" src="<%= s.userAvatar %>" width="15px" height="15px"> <%= s.username %> </h3>
-            <h4> <%=s.content%> </h4>
-            <p> Rating: <%=s.rating%> </p>    
-            <form action="/chats/<%= s._id %>?_method=DELETE" method="POST">
-              <button type="submit">X</button>
-            </form>
-            <% } %>
-            </section>
+        <% shinobi.chats.forEach(function(c) { %>
+            <div>
+                
+                <h3> <img class="avatar" alt="avatar" src="<%= c.userAvatar %>" width="15px" height="15px"> <%= c.userName %> </h3>
+                <h4> <%=c.content%> </h4>
+                <p> Rating: <%=c.rating%> </p>
+                <% if (user && user._id.equals(c.user)) { %>
+                <form action="/chats/<%= c._id %>?_method=DELETE" method="POST">
+                    <button type="submit">X</button>
+                </form>
+                <% } %>
+            </div>
         <% }) %>
-
-
-
-
-
 </body>

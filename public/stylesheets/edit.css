@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://i.imgur.com/lg1GFWH.png);
+    background-image: url(https://i.imgur.com/yvTGWGs.jpg);
     background-size: cover;
     font-family: 'Nanum Brush Script', cursive;
     height: 90vh;
@@ -32,4 +32,33 @@ h1 {
     text-align: center;
     font-size: 155px;
     margin: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+    font-size: 30px;
+    margin: 10px 10px 10px 10px;
+    font-family: 'Nanum Brush Script', cursive;
+    border: none;
+    background-color: rgba(1, 1, 1, .5);
+    color: white;
+    text-align: center;
+}
+select {
+    font-size: 30px;
+    font-family: 'Nanum Brush Script', cursive;
+}
+#add {
+    border-style: solid;
+    border-color: darkred;
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    font-family: 'Nanum Brush Script', cursive;
+}
+label {
+    color: white;
+    margin-top: 5px;
 }

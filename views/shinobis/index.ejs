@@ -21,7 +21,7 @@
         <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
         <% } %>
     </nav>
-    <!-- <%- include('../partials/header') %> -->
+
     <div id="mid">
     <h1>NINJA</h1>
     <table>
@@ -29,6 +29,14 @@
             <% shinobis.forEach(function(s) { %>
             <td>
                 <a href="shinobis/<%=s._id%>" class="ninjas"> <%= s.name %> </a>
+            </td>
+            <td>
+                <div>
+                    <% if (s.data) { %>
+                         <img src="data:image/<%=s.contentType%>;base64,
+                              <%=s.data.toString('base64')%>"  width="200" height="200">        
+                    <% } %>
+                </div>
             </td>
             <% }) %>
         </tr>

@@ -22,6 +22,12 @@
         <% } %>
     </nav>
     <h1><%= shinobi.name %></h1>
+    <div>
+        <% if (shinobi.data) { %>
+             <img src="data:image/<%=shinobi.contentType%>;base64,
+                  <%=shinobi.data.toString('base64')%>"  width="200" height="200">        
+        <% } %>
+    </div>
     <ul>
         <li><strong>Village: </strong><%= shinobi.village %></li>
         <li><strong>Age: </strong><%= shinobi.age %></li>

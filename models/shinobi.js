@@ -46,6 +46,9 @@ const shinobiSchema = new Schema ({
         type: String,
         required: true,
     },
+    data: Buffer,
+    contentType: String,
+    
     chats: [chatSchema]
 }, {
     timestamps: true

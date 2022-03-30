@@ -12,5 +12,5 @@ router.get('/:id', isLoggedIn, shinobisCtrl.show)
 router.post('/', isLoggedIn, shinobisCtrl.create)
 router.get('/:id/edit', isLoggedIn, shinobisCtrl.edit);
 router.put('/:id', isLoggedIn, shinobisCtrl.update);
-
+ 
 module.exports = router;

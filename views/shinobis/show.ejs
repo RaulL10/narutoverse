@@ -22,7 +22,7 @@
         <% } %>
     </nav>
     <h1><%= shinobi.name %></h1>
-    <div>
+    <div id="showImage">
         <% if (shinobi.data) { %>
              <img src="data:image/<%=shinobi.contentType%>;base64,
                   <%=shinobi.data.toString('base64')%>"  width="200" height="200">        

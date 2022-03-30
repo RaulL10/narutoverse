@@ -21,30 +21,23 @@
         <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
         <% } %>
     </nav>
-
     <div id="mid">
-    <h1>NINJA</h1>
-    <table>
-        <tr>
-            <% shinobis.forEach(function(s) { %>
-            <td>
+    <h1>SHINOBIS</h1>
+    <section id="images">
+        <% shinobis.forEach(function(s) { %>
+            <!-- <td>
                 <a href="shinobis/<%=s._id%>" class="ninjas"> <%= s.name %> </a>
-            </td>
-            <td>
-                <div>
-                    <% if (s.data) { %>
-                         <img src="data:image/<%=s.contentType%>;base64,
-                              <%=s.data.toString('base64')%>"  width="200" height="200">        
-                    <% } %>
-                </div>
-            </td>
-            <% }) %>
-        </tr>
-    </table>
-            
-  
+            </td> -->
+            <div class="box"> 
+            <% if (s.data) { %>
+                <a href="shinobis/<%=s._id%>">
+                        <img src="data:image/<%=s.contentType%>;base64, <%=s.data.toString('base64')%>"  width="200" height="200">        
+            <% } %>
+                </a>
+            </div>
+        <% }) %>
+    </section>   
     </div>
-    <!-- <a href="/shinobis/new">Add Ninja</a> -->
     <section id="right"><img src="https://i.imgur.com/EDFXBoL.jpeg"/></section>
     <section id="left"><img src="https://i.imgur.com/l3liKQZ.jpeg"/></section>
 </body>

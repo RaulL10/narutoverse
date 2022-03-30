@@ -38,8 +38,9 @@ ul {
     list-style: url(https://i.imgur.com/SwHF4r1.png);
     color: white;
     font-size: 45px;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-bottom: 0;
+    margin-top: 0px;
 }
 h2 {
     color: orange;
@@ -93,6 +94,7 @@ strong {
     border-color: orange;
     background-color: rgba(255, 166, 0, 0.747);
     text-decoration: none;
+    margin-left: 50px;
 }
 button {
     font-size: 20px;
@@ -101,3 +103,5 @@ button {
     border-color: orange;
     background-color: rgba(255, 166, 0, 0.747);
 }
+#showImage {
+text-align: center;}

@@ -60,7 +60,6 @@ footer {
   'list';
 }
 h1 {
-  grid-area: mid;
   grid-area: head;
   font-size: 150px;
   font-family: 'Nanum Brush Script', cursive;
@@ -68,38 +67,16 @@ h1 {
   justify-self: center;
   height: 155px;
 }
-table {
-  grid-area: list;
-  max-width: 380px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-self: center;
-}
-tr {
-  max-width: 380px;
-  display: flex;
+#images {
+  border: solid;
+  border-color: red;
+  display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-td {
-  text-align: center;
-  max-width: 100px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.box {
+  max-width: 205px;
+  max-height: 205px;
+  margin-left: 65px;
+  margin-right: 65px;
 }
-.ninjas {
-  font-size: 45px;
-  margin: auto;
-}
-/* ul {
-  grid-area: mid;
-  grid-area: list;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-li {
-  font-size: 50px;
-} */

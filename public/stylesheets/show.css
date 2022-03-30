@@ -84,3 +84,12 @@ p {
     font-size: 19px;
     margin: 5px;
 }
+strong {
+    color: orange;
+}
+#edit {
+    border: solid;
+    border-color: orange;
+    background-color: rgba(255, 166, 0, 0.747);
+    text-decoration: none;
+}

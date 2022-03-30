@@ -14,7 +14,7 @@
     <nav>
         <a href="/">HOME</a>
         <a href="/shinobis">SHINOBIS</a>
-        <a href="/shinobis/new">Add Ninja</a>
+        <a href="/shinobis/new">ADD NINJA</a>
         <% if (user) { %>
         <a href="/logout">LOG OUT</a>
         <% } else { %>
@@ -23,11 +23,11 @@
     </nav>
     <h1><%= shinobi.name %></h1>
     <ul>
-        <li><%= shinobi.village %></li>
-        <li><%= shinobi.age %></li>
-        <li><%= shinobi.jutsu %></li>
+        <li><strong>Village: </strong><%= shinobi.village %></li>
+        <li><strong>Age: </strong><%= shinobi.age %></li>
+        <li><strong>Fav Jutsu: </strong><%= shinobi.jutsu %></li>
     </ul>
-    <a href="/shinobis/<%= shinobi.id %>/edit">Edit Shinobi</a>
+    <a href="/shinobis/<%= shinobi.id %>/edit" id="edit">Edit Shinobi</a>
     <br>
     <br>
     <h2>Chat</h2>

@@ -1,3 +1,4 @@
+const { find } = require('../models/shinobi')
 const Shinobi = require('../models/shinobi')
 
 
@@ -38,7 +39,7 @@ function edit(req, res) {
     res.render('shinobis/edit', {shinobi})
 }
 function update(req, res) {
-    Shinobi.findOneAndUpdate( {_id: req.params.id}, req.body, {new: true} , function(err, shinobi) {
+    Shinobi.findOneAndUpdate({_id: req.params.id}, req.body, {new: true} , function(err, shinobi) {
         console.log(req.body)
         console.log(req.params.id)
         if (err)

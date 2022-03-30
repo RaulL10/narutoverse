@@ -34,18 +34,19 @@ nav > a.active {
 a {
   font-size: 30px;
   font-family: 'Nanum Brush Script', cursive;
+  color: white;
 }
 #right {
   grid-area: right;
   width: 450px;
   height: 1080px;
-  margin-top: 3px;
+  margin-top: 5px;
 }
 #left {
   grid-area: left;
   width: 450px;
   height: 1080px;
-  margin-top: 3px;
+  margin-top: 5px;
 
 }
 footer {

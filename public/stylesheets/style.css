@@ -2,7 +2,7 @@ body {
   height: 90vh;
   padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: rgb(240, 156, 46);
+  background-color: rgb(37, 33, 28);
   display: grid;
   grid-template-areas: 
   'nav nav nav'
@@ -66,17 +66,16 @@ h1 {
   margin: 0px;
   justify-self: center;
   height: 155px;
+  color: orange;
 }
 #images {
-  border: solid;
-  border-color: red;
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 .box {
-  max-width: 205px;
+  max-width: 300px;
   max-height: 205px;
-  margin-left: 65px;
-  margin-right: 65px;
+  margin-left: 17px;
+  margin-right: 17px;
 }

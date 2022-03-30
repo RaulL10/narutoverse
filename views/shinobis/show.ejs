@@ -53,8 +53,7 @@
     <% } %>
     <br>
         <% shinobi.chats.forEach(function(c) { %>
-            <div>
-                
+            <div id="chat">
                 <h3> <img class="avatar" alt="avatar" src="<%= c.userAvatar %>" width="15px" height="15px"> <%= c.userName %> </h3>
                 <h4> <%=c.content%> </h4>
                 <p> Rating: <%=c.rating%> </p>
@@ -66,3 +65,4 @@
             </div>
         <% }) %>
 </body>
+

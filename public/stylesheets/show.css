@@ -82,7 +82,8 @@ h4 {
 p {
     color: white;
     font-size: 19px;
-    margin: 5px;
+    margin: 1px 0px 0px 5px;
+    float: right;
 }
 strong {
     color: orange;
@@ -92,4 +93,11 @@ strong {
     border-color: orange;
     background-color: rgba(255, 166, 0, 0.747);
     text-decoration: none;
+}
+button {
+    font-size: 20px;
+    font-family: 'Nanum Brush Script', cursive;
+    border: solid;
+    border-color: orange;
+    background-color: rgba(255, 166, 0, 0.747);
 }

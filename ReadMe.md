@@ -22,8 +22,8 @@ This website invites all Naruto fans. Please use this site to create characters 
 9. Multer
 ---
 #### IMAGES
-<img src="">
-<img src="">
-<img src="">
-<img src="">
-<img src="">
+<img src="https://i.imgur.com/Lm5Jnnn.png">
+<img src="https://i.imgur.com/NRZRBB7.png">
+<img src="https://i.imgur.com/m5t3HDP.png">
+<img src="https://i.imgur.com/pWRea7y.png">
+<img src="https://i.imgur.com/hFGdv6W.png">

@@ -1,7 +1,7 @@
 body {
     background-image: url(https://i.imgur.com/wxPcGmg.png);
     font-family: 'Nanum Brush Script', cursive;
-    background-size: cover;
+    height: 90vh
 }
 h1 {
     font-size: 180px;

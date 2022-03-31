@@ -62,3 +62,26 @@ label {
     color: white;
     margin-top: 5px;
 }
+@media only screen and (max-width: 600px){
+    /* body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 0px 0px;
+    } */
+    h1 {
+        font-size: 100px;
+        text-align: center;
+    }
+    nav {
+        height: 30px;
+        width: 100%;
+    }
+    a {
+        font-size: 25px;
+    }
+    label {
+        color: orange;
+    }
+}

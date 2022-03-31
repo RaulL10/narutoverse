@@ -48,3 +48,17 @@ p {
 strong {
     color: black;
 }
+@media only screen and (max-width: 600px){
+    #homeNav {
+        height: 50px;
+    }
+    a {
+        font-size: 58px;
+    }
+    p {
+        font-size: 30px;
+    }
+    #homeFooter {
+        font-size: 50px;
+    }
+}

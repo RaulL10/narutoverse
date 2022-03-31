@@ -35,5 +35,16 @@
 a {
     font-size: 30px;
     color: white;
-
+    margin: 0px 20px 0px 20px;
+}
+p {
+    max-width: 50%;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+strong {
+    color: black;
 }

@@ -1,9 +1,9 @@
-#home {
+body {
     background-image: url(https://i.imgur.com/wxPcGmg.png);
     font-family: 'Nanum Brush Script', cursive;
-    height: 90vh;
+    background-size: cover;
 }
-#homeTitle {
+h1 {
     font-size: 180px;
     margin: 0;
 }
@@ -40,7 +40,7 @@ a {
 p {
     max-width: 50%;
     color: white;
-    font-size: 24px;
+    font-size: 28px;
     text-align: center;
     margin-top: 50px;
     margin-left: 200px;
@@ -49,15 +49,16 @@ strong {
     color: black;
 }
 
-@media only screen and (max-width: 600px){
-    #homeNav {
-        height: 50px;
+@media only screen and (max-width: 600px) {
+    nav {
+        height: 60px;
     }
     a {
-        font-size: 58px;
+        font-size: 55px;
     }
     p {
-        font-size: 30px;
+        max-width: 75%;
+        font-size: 45px;
     }
     #homeFooter {
         font-size: 50px;

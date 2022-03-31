@@ -21,7 +21,25 @@ This website invites all Naruto fans. Please use this site to create characters 
 8. CRUD
 9. Multer
 ---
-#### IMAGES
+#### GETTING STARTED
+Click the link below to be transported into my world.
+
+https://narutoverse.herokuapp.com/
+
+Trello Board
+https://trello.com/b/tI9MY4us/narutoverse
+
+
+---
+
+##### NEXT STEPS
+As for future enhancements. I'd like to add the following feature(s).
+1. Be able to edit the pic, along with the other information. 
+2. Be able to add gifs within the chat.
+
+---
+
+###### IMAGES
 <img src="https://i.imgur.com/Lm5Jnnn.png">
 <img src="https://i.imgur.com/NRZRBB7.png">
 <img src="https://i.imgur.com/m5t3HDP.png">

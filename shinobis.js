@@ -12,7 +12,6 @@ module.exports ={
     update
 }
 
-
 function index(req, res) {
     Shinobi.find({}, function(err, shinobis) {
         res.render('shinobis/index', {shinobis})
@@ -24,7 +23,6 @@ function newNinja(req, res) {
 }
 
 function create(req, res) {
-    //const shinobi = new Shinobi(req.body)
     var obj = {
        name: req.body.name,
        village: req.body.village,
@@ -33,11 +31,8 @@ function create(req, res) {
         data: fs.readFileSync(path.join(__dirname + '/uploads/' + req.file.filename)),
         contentType:'image/png'
         }
-    
-    console.log(obj.data)
-    Shinobi.create(obj, (err, shinobis) => {
+        Shinobi.create(obj, (err, shinobis) => {
         if (err) {
-            console.log(err);
             return res.redirect('/shinobis/new')
         }
         else {
@@ -58,8 +53,6 @@ function edit(req, res) {
 }
 function update(req, res) {
     Shinobi.findOneAndUpdate({_id: req.params.id}, req.body, {new: true} , function(err, shinobi) {
-        console.log(req.body)
-        console.log(req.params.id)
         if (err)
         return res.redirect ('/shinobis/edit')
         res.redirect(`/shinobis/${shinobi._id}`)

@@ -15,10 +15,8 @@ var storage = multer.diskStorage({
 	}
 });
 
-
 var upload = multer({ storage: storage });
 
-/* GET users listing. */
 router.get('/', shinobisCtrl.index)
 router.get('/new', isLoggedIn, shinobisCtrl.new)
 router.get('/:id', isLoggedIn, shinobisCtrl.show)

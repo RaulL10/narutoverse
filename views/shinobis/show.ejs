@@ -39,7 +39,6 @@
     <h2>Chat</h2>
     <% if (user) { %>
         <form action="/shinobis/<%=shinobi._id %>/chats" method="POST">
-            <!-- <label>Chat:</label> -->
             <textarea name="content"></textarea>
             <label>Rating</label>
             <select name="rating">
